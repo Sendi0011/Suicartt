@@ -1,0 +1,10 @@
+[package]
+name = "suicart"
+version = "0.0.1"
+edition = "2024"
+published-at = "0x0"
+
+[dependencies]
+
+[addresses]
+suicart = "0x0"
