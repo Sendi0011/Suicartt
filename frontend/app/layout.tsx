@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Suicart - Secure Blockchain Escrow Platform",
   description: "Secure escrow services on the Sui blockchain for digital assets and SUI tokens",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -19,10 +19,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <SuiWalletProvider>{children}</SuiWalletProvider>
+          <SuiWalletProvider>
+            <div suppressHydrationWarning>{children}</div>
+          </SuiWalletProvider>
         </ThemeProvider>
       </body>
     </html>
