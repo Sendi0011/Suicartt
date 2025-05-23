@@ -1,3 +1,5 @@
 {
+  "/create-escrow/page": "app/create-escrow/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
   "/page": "app/page.js"
 }
